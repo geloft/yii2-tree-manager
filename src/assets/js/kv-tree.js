@@ -614,6 +614,7 @@
             }
             self.$toolbar.find('.kv-' + self.btns.trash).removeAttr('disabled');
             $newNode = $node.find('> ul > li.kv-empty');
+            key = $node.data('key');
             if ($newNode.length > 0) {
                 key = $newNode.data('key').replace('empty-', '');
                 self.renderForm(null, key);
